@@ -1,0 +1,19 @@
+create icons:
+https://imagen.online-convert.com/es/convertir-a-ico
+
++ icons:
+https://fontawesome.com/icons/link?style=solid
+
++ (dev) icons:
+https://konpa.github.io/devicon/
+
+size
+https://www.iloveimg.com/es/redimensionar-imagen/jpg-cambiar-tamano
+(400x300 thumbnail)
+(900x550~ inside image)
+
+pick colors:
+https://www.w3schools.com/colors/colors_picker.asp
+
+free bootstrap themes:
+https://startbootstrap.com/themes/portfolio-resume/
