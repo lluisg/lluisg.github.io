@@ -10642,24 +10642,35 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 /* -----------------------------mine------------------------------------------- */
 
-.btn-link {
+.btn-link2 {
   color: #fff;
   background-color: #3399ff;
   border-color: #bd5d38;
 }
-.btn-link:hover {
+.btn-link2:hover {
   color: #fff;
   background-color: #9f4e2f;
   border-color: #964a2c;
 }
 .btn-github {
-  background: src="assets/img/logo/github.png" left center no-repeat;
   padding-left: 15px;
   color: #fff;
   background-color: #403c44;
   border-color: #bd5d38;
 }
 .btn-github:hover {
+  color: #fff;
+  background-color: #9f4e2f;
+  border-color: #964a2c;
+}
+.btn-dropbox {
+  background: src="assets/img/logo/dropbox.png" left center no-repeat;
+  padding-left: 15px;
+  color: #fff;
+  background-color: #1a53ff;
+  border-color: #bd5d38;
+}
+.btn-dropbox:hover {
   color: #fff;
   background-color: #9f4e2f;
   border-color: #964a2c;
