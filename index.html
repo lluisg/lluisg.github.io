@@ -151,7 +151,7 @@
                          </tr>
                          <tr>
                            <th><a class="devicon-cplusplus-plain colored" target="_blank" href="http://www.cplusplus.com/doc/tutorial/">C++</a></th>
-                           <th><a class="devicon-php-plain colored" target="_blank" href="https://www.php.net/">php</a></th>
+                           <!-- <th><a class="devicon-php-plain colored" target="_blank" href="https://www.php.net/">php</a></th> -->
                            <li </li>
                          </tr>
                        </table>
@@ -220,6 +220,20 @@
                         <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                     </div>
                     <div class="row">
+                      <div class="col-lg-4 col-sm-6">
+                          <div class="portfolio-item">
+                              <a class="portfolio-link" data-toggle="modal" href="#portfolioPasswords">
+                                  <div class="portfolio-hover">
+                                      <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                  </div>
+                                  <img class="img-fluid" src="assets/img/portfolio/passwords-t.png" alt="" />
+                              </a>
+                              <div class="portfolio-caption">
+                                  <div class="portfolio-caption-heading">Passwords Manager</div>
+                                  <div class="portfolio-caption-subheading text-muted">Executable</div>
+                              </div>
+                          </div>
+                      </div>
                       <div class="col-lg-4 col-sm-6">
                           <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioSudokuSolver">
@@ -361,6 +375,41 @@
             </section>
         </div>
         <!-- Portfolio Modals-->
+        <!-- PASSWORDS MANAGER-->
+        <div class="portfolio-modal modal fade" id="portfolioPasswords" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Passwords Manager</h2>
+                                    <p class="item-intro text-muted">June 2020</p>
+                                    <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/passwords.png" alt="" style="border: 5px solid #555;float:left; width:300px;height:400px;"/> -->
+                                    <p class="psubgrouptitle-l"> Description:</p>
+                                    <p class="pdescription-large">Programming of an executable using Python and Tkinter which can store and retrieve passwords.
+                                    The program uses two files: the user information, and the passwords.
+
+                                    In order to be secure, hash codification has been applied for the principal password (which is stored on the users' file), and so it will not possible to be retrieved. Also, symmetric codification using keys are applied to all the passwords stored in the passwords file, so they can be retrieved and shown again in the program itself.
+                                    <!-- <ul class="list-inline dev-icons"> Programming languages -->
+                                    <p class="psubgrouptitle-l" >Programmed with:</p>
+                                    <ul class="list-inline"> <p><p>
+                                      <li class="list-inline-item"><a class="devicon-python-plain colored" target="_blank" href="https://www.python.org/">Python</a></li>
+                                    </ul>
+                                    <a href="https://drive.google.com/file/d/1vVoYjZYttj8sjkdaTz2_0F4I0v-BENJ-/view?usp=sharing" target="_blank" class="btn btn-link"><i class="fas fa-link"></i>Download Link</a>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- SUDOKU SOLVER-->
         <div class="portfolio-modal modal fade" id="portfolioSudokuSolver" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
