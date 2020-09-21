@@ -297,6 +297,20 @@
                     <div class="row">
                       <div class="col-lg-4 col-sm-6">
                           <div class="portfolio-item">
+                              <a class="portfolio-link" data-toggle="modal" href="#portfolioTransformer">
+                                  <div class="portfolio-hover">
+                                      <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                  </div>
+                                  <img class="img-fluid" src="assets/img/portfolio/transformer-t.png" alt="" />
+                              </a>
+                              <div class="portfolio-caption">
+                                  <div class="portfolio-caption-heading">Transformer Implementation Project</div>
+                                  <div class="portfolio-caption-subheading text-muted">Deep Learning</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6">
+                          <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioJumbledProject">
                                   <div class="portfolio-hover">
                                       <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -497,7 +511,45 @@
             </section>
         </div>
         <!-- Portfolio Modals-->
-          <!-- JUMBLED LETTERS PROJECT-->
+        <!-- TRANSFORMER-->
+        <div class="portfolio-modal modal fade" id="portfolioTransformer" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Transformer Implementation Project</h2>
+                                    <p class="item-intro text-muted">September 2020</p>
+                                    <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/guesserpackage.png" alt="" style="border: 5px solid #555;float:left; width:300px;height:400px;"/> -->
+                                    <p class="psubgrouptitle-l"> Description:</p>
+                                    <p class="pdescription-large"> I tried to implement a Transformer model, the state of the art for NLP and many other tasks, in order to learn better how it works. To do so, I designed a simple task such as to fill the blank word in a sentence (the language selected was Spanish).To do so I implemented a Colab notebook with everything, using fewer sentences despite knowing that it will obtain worse results to make it work more quickly and assure it works. Then I adapted it into a python file which ran with more sentences and tries to obtain better results.
+
+                                    The Transformer implementation was based on the one from Samuel Lynn-Evans in <a href="https://blog.floydhub.com/the-transformer-in-pytorch/"> his blog</a>.
+
+                                    The results obtained on the test set using Cross Entropy Loss and the Newscarl dataset were of 1.61 and 1.92 for the simplified version and the more complex version, respectively. And of 0.66 with the complex version but using the Europarl dataset.
+                                    <!-- <ul class="list-inline dev-icons"> Programming languages -->
+                                    <p class="psubgrouptitle-l" >Programmed with:</p>
+                                    <ul class="list-inline"> <p><p>
+                                      <li class="list-inline-item"><a class="devicon-python-plain colored" target="_blank" href="https://www.python.org/">Python</a></li>
+                                      <li class="list-inline-item" style="color:#ff471a;font-weight: 600;"><img src="assets/img/logos/pytorch.ico" alt="" class="logo_progaming"  target="_blank" href="https://www.pytorch.org">Pytorch</img></li>
+                                      <li class="list-inline-item" style="color:#737373;font-weight: 600;"><img src="assets/img/logos/colab.ico" alt="" class="logo_progaming"  target="_blank" href="https://jupyter.org/">Google Colab</img></li>
+                                    </ul>
+                                    <a href="https://github.com/lluisg/Transformer-Implementation-Project" target="_blank" class="btn btn-github"><i class="fab fa-github"></i>Github Code</a>
+                                    <a href="https://colab.research.google.com/drive/1rmcY4OhO22WcSJpvlpT9ES3z2bE0UCI-?usp=sharing" target="_blank" class="btn btn-colab"><i class="fab fa-github"></i>Colab Notebook</a>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="portfolio-modal modal fade" id="portfolioJumbledProject" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
