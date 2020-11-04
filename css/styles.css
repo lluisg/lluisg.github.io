@@ -10652,6 +10652,16 @@ section#contact form#contactForm :-ms-input-placeholder {
   background-color: #9f4e2f;
   border-color: #964a2c;
 }
+.btn-link-video {
+  color: #fff;
+  background-color: #ff6600;
+  border-color: #bd5d38;
+}
+.btn-link-video:hover {
+  color: #fff;
+  background-color: #cc5200;
+  border-color: #964a2c;
+}
 .btn-github {
   padding-left: 15px;
   color: #fff;
