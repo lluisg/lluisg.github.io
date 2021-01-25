@@ -298,6 +298,20 @@
                     <div class="row">
                       <div class="col-lg-4 col-sm-6">
                           <div class="portfolio-item">
+                              <a class="portfolio-link" data-toggle="modal" href="#portfolioYoutube">
+                                  <div class="portfolio-hover">
+                                      <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                  </div>
+                                  <img class="img-fluid" src="assets/img/portfolio/youtube-t.png" alt="" />
+                              </a>
+                              <div class="portfolio-caption">
+                                  <div class="portfolio-caption-heading">Youtube Views Predictor</div>
+                                  <div class="portfolio-caption-subheading text-muted">Data Scraping / Deep Learning</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6">
+                          <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioFilmnder">
                                   <div class="portfolio-hover">
                                       <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -526,6 +540,41 @@
             </section>
         </div>
         <!-- Portfolio Modals-->
+        <!-- YOUTUBE VIEWS-->
+        <div class="portfolio-modal modal fade" id="portfolioYoutube" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Youtube Views Predictor</h2>
+                                    <p class="item-intro text-muted">Winter 2020</p>
+                                    <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/guesserpackage.png" alt="" style="border: 5px solid #555;float:left; width:300px;height:400px;"/> -->
+                                    <p class="psubgrouptitle-l"> Description: (Not Finished As Of 21/01/2021)</p>
+                                    <p class="pdescription-large">Youtube is one of the most important platforms in the world, and there exists a lot of interest in the content creators side to predict the number of views their future video will get. As such I created an Deep Learning architecture using an LSTM model to try to predict the future views obtained by a video on a channel taking into account the information available from their previous uploaded videos. During this I found that not much suitable data could be found on the internet, so a recompiled sequential information of the videos uploaded by different channels on Youtube.
+To obtain the data I wanted from Youtube, I used the data from 3 different sources: <a href="https://www.kaggle.com/datasnaek/youtube-new?select=GBvideos.csv">Trending YouTube Video Statistics by Mitchell J</a>, <a href="https://data.world/sevenup13/youtube-video-and-channel-metadata">Youtube Video and Channel Metadata by Vishwanath Seshagiri</a> and the <a href="https://research.google.com/youtube8m/index.html">YouTube-8M Dataset</a>.
+I started collecting data around November 2020, although there have been some hiatus. Since then, I have compiled more than 80.000 unique channels from the original 3 sources. From those channels, I collected information of more than 250.000 unique videos from more than 13.000 channels. And with those videos information I built a model that obtained predictions with 17.53% accuracy.
+                                    <p class="psubgrouptitle-l" >Programmed with:</p>
+                                    <ul class="list-inline"> <p><p>
+                                      <li class="list-inline-item"><a class="devicon-python-plain colored" target="_blank" href="https://www.python.org/">Python</a></li>
+                                      <li class="list-inline-item" style="color:#ff471a;font-weight: 600;"><img src="assets/img/logos/pytorch.ico" alt="" class="logo_progaming"  target="_blank" href="https://www.pytorch.org">Pytorch</img></li>
+                                    </ul>
+                                    <a href="https://github.com/lluisg/YoutubeViewsProject" target="_blank" class="btn btn-github"><i class="fab fa-github"></i>Github Code</a>
+                                    <a href="https://drive.google.com/file/d/1sjb48ug70FkwioMY3brQL2vwMok3z7si/view?usp=sharing" target="_blank" class="btn btn-link2"><i class="fas fa-link"></i>Research Paper Link</a>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- FILMNDER-->
         <div class="portfolio-modal modal fade" id="portfolioFilmnder" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -970,3 +1019,4 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
+<!-- last views: 40 -->
