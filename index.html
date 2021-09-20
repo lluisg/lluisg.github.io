@@ -306,12 +306,23 @@
                     <div class="row">
                       <div class="col-lg-4 col-sm-6">
                           <div class="portfolio-item">
+                              <a class="portfolio-link" data-toggle="modal" href="#portfolioRLGames">
+                                  <img class="img-fluid" src="assets/img/portfolio/rlgames-t.jpg" alt="" style="border:3px ridge;" />
+                              </a>
+                              <div class="portfolio-caption" style="text-align: center;">
+                                  <div class="portfolio-caption-heading">RL Games</div>
+                                  <div class="portfolio-caption-subheading text-muted">Deep Learning<br><br></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6">
+                          <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioAutoclicker">
                                   <img class="img-fluid" src="assets/img/portfolio/autoclicker-t.png" alt="" style="border:3px ridge;" />
                               </a>
                               <div class="portfolio-caption" style="text-align: center;">
                                   <div class="portfolio-caption-heading">Mobile Game Autoclicker</div>
-                                  <div class="portfolio-caption-subheading text-muted">AutoClicker<br><br></div>
+                                  <div class="portfolio-caption-subheading text-muted">Bot<br><br></div>
                               </div>
                           </div>
                       </div>
@@ -534,6 +545,43 @@
             </section>
         </div>
         <!-- Portfolio Modals-->
+        <!-- RL GAMES-->
+        <div class="portfolio-modal modal fade" id="portfolioRLGames" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                  <h2 class="text-uppercase">Reinforcement Learning with Games</h2>
+                                  <p class="item-intro text-muted">September 2021 - Current</p>
+                                  <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/guesserpackage.png" alt="" style="border: 5px solid #555;float:left; width:300px;height:400px;"/> -->
+                                  <p class="psubgrouptitle-l"> Description:</p>
+                                  <p class="pdescription-large">Implementation with Python and Pygame of different (simple) videogames.
+                                    After implementing them the intention is to train a Reinforcement Learning model to play them. As I don't have a PC good enough, I am limited by the Google Collab capacities.
+                                    Right now, the games implemented are:
+                                    <ul>
+                                      <li> <b>2048</b> <a href="https://colab.research.google.com/drive/1ZyFrj4ELD09ar6BC6CgTP6xwx0xfyf5X?usp=sharing" target="_blank" class="btn btn-colab"><i class="fab fa-github"></i>Colab Notebook</a> <a href="https://drive.google.com/file/d/18thnzPIuI_pKz1Rn2o_q0_SoELZUyXvt/view?usp=sharing" target="_blank" class="btn btn-link2"><i class="fas fa-link"></i>Video Example</a> </li>
+                                      <li>Connect 4 (not RL)</li>
+                                    </ul>
+                                    In the future, the intention is to implement more games and train the models within the possibilities. When a better computer is bought in the future, the training will be resumed to achieve even better results.
+                                  <p class="psubgrouptitle-l" >Programmed with:</p>
+                                  <ul class="list-inline"> <p><p>
+                                    <li class="list-inline-item"><a class="devicon-python-plain colored" target="_blank" href="https://www.python.org/">Python</a></li>
+                                  </ul>
+                                  <a href="https://github.com/lluisg/GamesRL" target="_blank" class="btn btn-github"><i class="fab fa-github"></i>Github Code</a>
+                                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                      <i class="fas fa-times mr-1"></i>
+                                      Close Project
+                                  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- AUTOCLICKER-->
         <div class="portfolio-modal modal fade" id="portfolioAutoclicker" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
