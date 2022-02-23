@@ -306,6 +306,17 @@
                     <div class="row">
                       <div class="col-lg-4 col-sm-6">
                           <div class="portfolio-item">
+                              <a class="portfolio-link" data-toggle="modal" href="#portfolioWordle">
+                                  <img class="img-fluid" src="assets/img/portfolio/wordle-t.jpg" alt="" style="border:3px ridge;" />
+                              </a>
+                              <div class="portfolio-caption" style="text-align: center;">
+                                  <div class="portfolio-caption-heading">Wordle Solver</div>
+                                  <div class="portfolio-caption-subheading text-muted">Web<br><br></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6">
+                          <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioRLGames">
                                   <img class="img-fluid" src="assets/img/portfolio/rlgames-t.jpg" alt="" style="border:3px ridge;" />
                               </a>
@@ -545,6 +556,42 @@
             </section>
         </div>
         <!-- Portfolio Modals-->
+        <!-- WORDLE SOLVER-->
+        <div class="portfolio-modal modal fade" id="portfolioWordle" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                  <h2 class="text-uppercase">Wordle/Paraulógic Solver</h2>
+                                  <p class="item-intro text-muted">February 2022</p>
+                                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/wordle.jpg" alt="" style="border: 5px solid #555;float:left; width:300px;height:200px;"/>
+                                  <p class="psubgrouptitle-s"> Description:</p>
+                                  <p class="pdescription-short"> Online tool to help win the Wordle and Paraulógic games in the Catalan language with client and server side programming with NodeJs and using information theory to suggest the better next word to guess.</p>
+                                  <!-- <ul class="list-inline dev-icons"> Programming languages -->
+                                  <p class="psubgrouptitle-s" >Programmed with:</p>
+                                  <ul class="list-inline"> <p><p>
+                                    <li class="list-inline-item"><a class="devicon-nodejs-plain colored" target="_blank" href="https://atom.io/">NodeJS</a></li>
+                                    <li class="list-inline-item"><a class="devicon-css3-plain colored" target="_blank" href="https://atom.io/">CSS</a></li>
+                                    <li class="list-inline-item"><a class="devicon-html5-plain colored" target="_blank" href="https://atom.io/">HTML</a></li>
+                                    <li class="list-inline-item"><a class="devicon-javascript-plain colored" target="_blank" href="https://atom.io/">Javascript</a></li>
+                                  </ul>
+                                  <a href="https://github.com/lluisg/WordleParaulogic" target="_blank" class="btn btn-github"><i class="fab fa-github"></i>Github Code</a>
+                                  <a href="https://paraules-catalanes.herokuapp.com/" target="_blank" class="btn btn-link2"><i class="fas fa-link"></i>Online Link</a>
+                                  <a href="https://drive.google.com/file/d/17FgpybzJLCQ9idTYtavIgG2Gu9SDLkDi/view?usp=sharing" target="_blank" class="btn btn-link-video"><i class="fas fa-link"></i>Video Example</a>
+                                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                      <i class="fas fa-times mr-1"></i>
+                                      Close Project
+                                  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- RL GAMES-->
         <div class="portfolio-modal modal fade" id="portfolioRLGames" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -659,8 +706,8 @@
                                     <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/guesserpackage.png" alt="" style="border: 5px solid #555;float:left; width:300px;height:400px;"/> -->
                                     <p class="psubgrouptitle-l"> Description: (version 27/07/2021)</p>
                                     <p class="pdescription-large">Youtube is one of the most important platforms in the world, and there exists a lot of interest in the content creators side to predict the number of views their future video will get. As such I created an Deep Learning architecture using an LSTM model to try to predict the future views obtained by a video on a channel taking into account the information available from their previous uploaded videos. During this I found that not much suitable data could be found on the internet, so a recompiled sequential information of the videos uploaded by different channels on Youtube.
-To obtain the data I wanted from Youtube, I used the data from 3 different sources: <a href="https://www.kaggle.com/datasnaek/youtube-new?select=GBvideos.csv">Trending YouTube Video Statistics by Mitchell J</a>, <a href="https://data.world/sevenup13/youtube-video-and-channel-metadata">Youtube Video and Channel Metadata by Vishwanath Seshagiri</a> and the <a href="https://research.google.com/youtube8m/index.html">YouTube-8M Dataset</a>.
-I started collecting data around November 2020, although there have been some hiatus. Since then, I have compiled more than 171.000 unique channels from the original 3 sources. From those channels, I collected information of more than 388.000 unique videos from more than 19.800 channels. And with those videos information I built a model that obtained predictions with 21.38% accuracy.
+                                    To obtain the data I wanted from Youtube, I used the data from 3 different sources: <a href="https://www.kaggle.com/datasnaek/youtube-new?select=GBvideos.csv">Trending YouTube Video Statistics by Mitchell J</a>, <a href="https://data.world/sevenup13/youtube-video-and-channel-metadata">Youtube Video and Channel Metadata by Vishwanath Seshagiri</a> and the <a href="https://research.google.com/youtube8m/index.html">YouTube-8M Dataset</a>.
+                                    I started collecting data around November 2020, although there have been some hiatus. Since then, I have compiled more than 171.000 unique channels from the original 3 sources. From those channels, I collected information of more than 388.000 unique videos from more than 19.800 channels. And with those videos information I built a model that obtained predictions with 21.38% accuracy.
                                     <p class="psubgrouptitle-l" >Programmed with:</p>
                                     <ul class="list-inline"> <p><p>
                                       <li class="list-inline-item"><a class="devicon-python-plain colored" target="_blank" href="https://www.python.org/">Python</a></li>
@@ -1123,4 +1170,4 @@ I started collecting data around November 2020, although there have been some hi
         <script src="js/scripts.js"></script>
     </body>
 </html>
-<!-- last views: 300 -->
+<!-- last views: 307 -->
