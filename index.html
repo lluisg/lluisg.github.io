@@ -61,7 +61,7 @@
                         <a class="social-icon" href="https://www.linkedin.com/in/lluisguardiafernandez/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/lluisg"><i class="fab fa-github"></i></a>
                         <a class="social-icon" href="mailto:lluis.guardia.f@gmail.com"><i class="fa fa-envelope-open"></i></a>
-                        <a class="social-icon" href="skype:lluis.guardia.f?userinfo"><i class="fab fa-skype"></i></a>
+                        <!-- <a class="social-icon" href="skype:lluis.guardia.f?userinfo"><i class="fab fa-skype"></i></a> -->
                     </div>
                 </div>
             </section>
@@ -308,8 +308,16 @@
                         <h2 class="section-heading text-uppercase">Projects</h2>
                         <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                     </div>
+
+                    <div class="d-flex justify-content-center mb-5">
+                      <button class="btn btn-primary btn-lg text-center mx-1" id="flt_btn_all" onclick="activateProjectFilter('ALL');">All Projects</button>
+                      <button class="btn btn-outline-success btn-lg text-center mx-1" id="flt_btn_web" onclick="activateProjectFilter('WEB');">Web Development</button>
+                      <button class="btn btn-outline-secondary btn-lg text-center mx-1" id="flt_btn_ml" onclick="activateProjectFilter('ML');">Machine/Deep Learning</button>
+                      <button class="btn btn-outline-info btn-lg text-center mx-1" id="flt_btn_other" onclick="activateProjectFilter('OTHER');">Others</button>
+                    </div>
+
                     <div class="row">
-                      <div class="col-lg-4 col-sm-6">
+                      <div class="col-lg-4 col-sm-6 TYPE_WEB">
                           <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioWordle">
                                   <img class="img-fluid" src="assets/img/portfolio/wordle-t.jpg" alt="" style="border:3px ridge;" />
@@ -320,7 +328,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-lg-4 col-sm-6">
+                      <div class="col-lg-4 col-sm-6 TYPE_ML">
                           <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioRLGames">
                                   <img class="img-fluid" src="assets/img/portfolio/rlgames-t.jpg" alt="" style="border:3px ridge;" />
@@ -331,7 +339,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-lg-4 col-sm-6">
+                      <div class="col-lg-4 col-sm-6 TYPE_OTHER">
                           <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioAutoclicker">
                                   <img class="img-fluid" src="assets/img/portfolio/autoclicker-t.png" alt="" style="border:3px ridge;" />
@@ -342,7 +350,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-lg-4 col-sm-6">
+                      <div class="col-lg-4 col-sm-6 TYPE_ML">
                           <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioTFM">
                                   <img class="img-fluid" src="assets/img/portfolio/tfm-t.png" alt="" style="border:3px ridge;" />
@@ -353,7 +361,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-lg-4 col-sm-6">
+                      <div class="col-lg-4 col-sm-6 TYPE_ML">
                           <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioYoutube">
                                   <img class="img-fluid" src="assets/img/portfolio/youtube-t.png" alt="" style="border:3px ridge;" />
@@ -364,7 +372,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-lg-4 col-sm-6">
+                      <div class="col-lg-4 col-sm-6 TYPE_WEB">
                           <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioFilmnder">
                                   <img class="img-fluid" src="assets/img/portfolio/filmnder-t.jpg" alt="" style="border:3px ridge;" />
@@ -375,7 +383,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-lg-4 col-sm-6">
+                      <div class="col-lg-4 col-sm-6 TYPE_ML">
                           <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioTransformer">
                                   <img class="img-fluid" src="assets/img/portfolio/transformer-t.png" alt="" style="border:3px ridge;" />
@@ -386,7 +394,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-lg-4 col-sm-6">
+                      <div class="col-lg-4 col-sm-6 TYPE_ML">
                           <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioJumbledProject">
                                   <img class="img-fluid" src="assets/img/portfolio/jumbledproject-t.png" alt="" style="border:3px ridge;" />
@@ -397,7 +405,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-lg-4 col-sm-6">
+                      <div class="col-lg-4 col-sm-6 TYPE_OTHER">
                           <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioGuesserPackage">
                                   <img class="img-fluid" src="assets/img/portfolio/guesserpackage-t.png" alt="" style="border:3px ridge;" />
@@ -408,7 +416,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-lg-4 col-sm-6">
+                      <div class="col-lg-4 col-sm-6 TYPE_OTHER">
                           <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioPasswords">
                                   <img class="img-fluid" src="assets/img/portfolio/passwords-t.png" alt="" style="border:3px ridge;" />
@@ -419,7 +427,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-lg-4 col-sm-6">
+                      <div class="col-lg-4 col-sm-6 TYPE_OTHER">
                           <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioSpreadsheet">
                                   <img class="img-fluid" src="assets/img/portfolio/spreadsheet-t.png" alt="" style="border:3px ridge;" />
@@ -430,7 +438,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-lg-4 col-sm-6">
+                      <div class="col-lg-4 col-sm-6 TYPE_WEB">
                           <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioSudokuSolver">
                                   <img class="img-fluid" src="assets/img/portfolio/sudoku-t.png" alt="" style="border:3px ridge;" />
@@ -441,7 +449,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                      <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0 TYPE_WEB">
                           <div class="portfolio-item">
                               <a class="portfolio-link" data-toggle="modal" href="#portfolioEnglishWebsite">
                                   <img class="img-fluid" src="assets/img/portfolio/englishex-t.png" alt="" style="border:3px ridge;" />
@@ -452,7 +460,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-lg-4 col-sm-6 mb-4">
+                      <div class="col-lg-4 col-sm-6 mb-4 TYPE_ML">
                             <div class="portfolio-item">
                                 <a class="portfolio-link" data-toggle="modal" href="#portfolioEarRecog">
                                     <img class="img-fluid" src="assets/img/portfolio/eardetector-t.jpg" alt="" style="border:3px ridge;" />
@@ -463,7 +471,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="col-lg-4 col-sm-6 mb-4 TYPE_ML">
                             <div class="portfolio-item">
                                 <a class="portfolio-link" data-toggle="modal" href="#portfolioTFG">
                                     <img class="img-fluid" src="assets/img/portfolio/tfg-t.png" alt="" style="border:3px ridge;" />
@@ -474,7 +482,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="col-lg-4 col-sm-6 mb-4 TYPE_OTHER">
                             <div class="portfolio-item">
                                 <a class="portfolio-link" data-toggle="modal" href="#portfolioPAE">
                                     <img class="img-fluid" src="assets/img/portfolio/pae-t.png" alt="" style="border:3px ridge;" />
@@ -1180,6 +1188,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/scripts_new.js"></script>
     </body>
 </html>
 <!-- last views: 307 -->
