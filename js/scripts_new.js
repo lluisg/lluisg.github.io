@@ -7,10 +7,10 @@ function activateProjectFilter(case_activate) {
 function activateFilter(case_filter) {
   // HIDE ALL THE PROJECTS EXCEPT THE ONES OF THE SAME TYPE AS THE FILTER
   // IF ALL IS CLICKED, ALL WILL BE SHOWN
-  type_filter = "TYPE_".concat(case_filter.toUpperCase());
-  var allcases = ["TYPE_WEB", "TYPE_ML", "TYPE_OTHER"];
+  type_filter = "type_".concat(case_filter.toLowerCase());
+  var allcases = ["type_web", "type_ml", "type_other"];
 
-  if (case_filter != "ALL"){
+  if (case_filter != "all"){
     for (var i = 0, ii = allcases.length; i < ii; i++) {
       var myElements = document.getElementsByClassName(allcases[i]);
       for (var j = 0, jj = myElements.length; j < jj; j++) {
