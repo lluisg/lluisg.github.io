@@ -10614,7 +10614,7 @@ section#contact form#contactForm :-ms-input-placeholder{
   margin: 10px;
 }
 
-.btn-modal-link:hover, .btn-modal-github:hover, .btn-modal-video:hover , .btn-modal-dropbox:hover , .btn-modal-colab:hover{
+.btn-modal-link:hover, .btn-modal-github:hover, .btn-modal-video:hover, .btn-modal-dropbox:hover, .btn-modal-colab:hover{
   color: #fff;
   background-color: #743b25;
 }
@@ -10806,10 +10806,6 @@ section#contact form#contactForm :-ms-input-placeholder{
 .small-text{
   width: 55%;
   padding-right: 1rem;
-}
-
-.large-text{
-  width: 100%;
 }
 
 .psubgrouptitle{
