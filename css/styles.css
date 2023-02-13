@@ -10910,3 +10910,16 @@ section#contact form#contactForm :-ms-input-placeholder{
     row-gap: 0.5rem;
   }
 }
+
+
+/* ----------------------------- OTHER ------------------------------------------- */
+
+@media (max-width: 568px){ /*add space between other and languages when small*/
+  .languages-section{
+    margin-top: 4rem;
+  }  
+}
+
+.row-projects{ /*center the elemets when only 1*/
+  text-align: center;
+}

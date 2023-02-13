@@ -405,13 +405,14 @@
             </div>
             <div class="btns-type-projs mb-5">
               <button class="btn btn-primary btn-lg text-center mx-1" id="flt_btn_all" onclick="activateProjectFilter('all');">All Projects</button>
+              <button class="btn btn-outline-danger btn-lg text-center mx-1" id="flt_btn_ml" onclick="activateProjectFilter('ml');">Machine Learning</button>
               <button class="btn btn-outline-success btn-lg text-center mx-1" id="flt_btn_web" onclick="activateProjectFilter('web');">Web Development</button>
-              <button class="btn btn-outline-secondary btn-lg text-center mx-1" id="flt_btn_ml" onclick="activateProjectFilter('ml');">Machine Learning</button>
               <button class="btn btn-outline-warning btn-lg text-center mx-1" id="flt_btn_data" onclick="activateProjectFilter('data');">Data Processing</button>
+              <button class="btn btn-outline-secondary btn-lg text-center mx-1" id="flt_btn_db" onclick="activateProjectFilter('db');">DataBases</button>
               <button class="btn btn-outline-info btn-lg text-center mx-1" id="flt_btn_other" onclick="activateProjectFilter('other');">Others</button>
             </div>
 
-            <div class="row">
+            <div class="row row-projects">
               <div class="col-lg-4 col-sm-6 type_web">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioFrontendLibraries">
@@ -426,7 +427,7 @@
               <div class="col-lg-4 col-sm-6 type_web">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioBlockingWeb">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/prize_web-t.png" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/prize_web-t.png" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">Prize Websites</div>
@@ -437,7 +438,7 @@
               <div class="col-lg-4 col-sm-6 type_web">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioResponsiveWeb">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/responsive_web-t.png" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/responsive_web-t.png" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">Responsive Web Design Projects</div>
@@ -445,10 +446,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-6 type_web">
+              <div class="col-lg-4 col-sm-6 type_web type_data type_db">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioWordle">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/wordle-t.jpg" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/wordle-t.jpg" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">Wordle Solver</div>
@@ -459,7 +460,7 @@
               <div class="col-lg-4 col-sm-6 type_ml">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioRLGames">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/rlgames-t.jpg" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/rlgames-t.jpg" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">RL Games</div>
@@ -470,7 +471,7 @@
               <div class="col-lg-4 col-sm-6 type_other">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioAutoclicker">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/autoclicker-t.png" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/autoclicker-t.png" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">Mobile Game Autoclicker</div>
@@ -478,10 +479,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-6 type_ml">
+              <div class="col-lg-4 col-sm-6 type_ml type_data">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioTFM">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/tfm-t.png" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/tfm-t.png" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">Exploring Lifelong Learning in Neural Machine Translation</div>
@@ -489,10 +490,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-6 type_ml">
+              <div class="col-lg-4 col-sm-6 type_ml type_data">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioYoutube">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/youtube-t.png" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/youtube-t.png" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">Youtube Views Predictor</div>
@@ -500,10 +501,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-6 type_web">
+              <div class="col-lg-4 col-sm-6 type_web type_data type_db">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioFilmnder">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/filmnder-t.jpg" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/filmnder-t.jpg" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">Filmnder</div>
@@ -511,10 +512,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-6 type_ml">
+              <div class="col-lg-4 col-sm-6 type_ml type_data">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioTransformer">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/transformer-t.png" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/transformer-t.png" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">Transformer Implementation Project</div>
@@ -522,10 +523,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-6 type_ml">
+              <div class="col-lg-4 col-sm-6 type_ml type_data">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioJumbledProject">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/jumbledproject-t.png" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/jumbledproject-t.png" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">Jumbled Letters Project</div>
@@ -536,7 +537,7 @@
               <div class="col-lg-4 col-sm-6 type_other">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioGuesserPackage">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/guesserpackage-t.png" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/guesserpackage-t.png" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">Guesser Package</div>
@@ -547,7 +548,7 @@
               <div class="col-lg-4 col-sm-6 type_other">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioPasswords">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/passwords-t.png" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/passwords-t.png" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">Passwords Manager</div>
@@ -558,7 +559,7 @@
               <div class="col-lg-4 col-sm-6 type_other">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioSpreadsheet">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/spreadsheet-t.png" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/spreadsheet-t.png" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">Spreadsheet</div>
@@ -569,7 +570,7 @@
               <div class="col-lg-4 col-sm-6 type_web">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioSudokuSolver">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/sudoku-t.png" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/sudoku-t.png" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">Sudoku Solver</div>
@@ -577,10 +578,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0 type_web">
+              <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0 type_web type_db">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioEnglishWebsite">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/englishex-t.png" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/englishex-t.png" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">English Web Exercices</div>
@@ -591,7 +592,7 @@
               <div class="col-lg-4 col-sm-6 mb-4 type_ml">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioEarRecog">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/eardetector-t.jpg" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/eardetector-t.jpg" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">Ear Recognition</div>
@@ -602,7 +603,7 @@
               <div class="col-lg-4 col-sm-6 mb-4 type_ml">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioTFG">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/tfg-t.png" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/tfg-t.png" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">WMT: Statistical vs Neural Machine Translation</div>
@@ -610,10 +611,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-6 mb-4 type_other">
+              <div class="col-lg-4 col-sm-6 mb-4 type_other type_db">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioPAE">
-                    <img class="img-fluid  proj_thumb rounded" src="assets/img/portfolio/pae-t.png" alt="Project Thumbnail" />
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/pae-t.png" alt="Project Thumbnail" />
                   </a>
                   <div class="portfolio-caption" style="text-align: center;">
                     <div class="portfolio-caption-heading">Culinary Chatbot</div>
@@ -632,42 +633,42 @@
             <!-- <h2 class="mb-5">Other Info</h2>-->
             <div class="container">
               <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                  <div class="text-center">
+                <div class="otherinfo-section col-lg-4 col-sm-6">
+                  <div class="text-left">
                     <h2 class="section-heading text-uppercase">Other Info</h2>
                     <ul class="fa-ul mb-0">
-                      <li>
+                      <li class="my-2">
                         <span><i class="fas fa-check"></i></span>
                         Knowledge of LaTeX  language
                       </li>
-                      <li>
+                      <li class="my-2">
                         <span><i class="fas fa-check"></i></span>
                         Knowledge of Photoshop
                       </li>
-                      <li>
+                      <li class="my-2">
                         <span><i class="fas fa-check"></i></span>
                         Possesion of a Driving License
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                  <div class="text-center">
+                <div class="languages-section col-lg-4 col-sm-6">
+                  <div class="text-left">
                     <h2 class="section-heading text-uppercase">Languages</h2>
                     <ul class="fa-ul mb-0">
-                      <li>
+                      <li class="my-2">
                         <span class="list-inline-item"><img src="assets/img/languages/english.png" class="logo_languages" style="width:1.5rem;height:1.5rem;"></img></span>
                         English -- C1 European Level
                       </li>
-                      <li>
+                      <li class="my-2">
                         <span class="list-inline-item"><img src="assets/img/languages/danish.png" class="logo_languages" style="width:1.5rem;height:1.5rem;"></img></span>
                         Danish -- Starting Out...
                       </li>
-                      <li>
+                      <li class="my-2">
                         <span class="list-inline-item"><img src="assets/img/languages/spanish.png" class="logo_languages" style="width:1.5rem;height:1.5rem;"></img></span>
                         Spanish -- Native
                       </li>
-                      <li>
+                      <li class="my-2">
                         <span class="list-inline-item"><img src="assets/img/languages/catalan.png" class="logo_languages" style="width:1.5rem;height:1.5rem;"></img></span>
                         Catalan -- Native
                       </li>
@@ -863,6 +864,8 @@
                       <div class="list-tools">
                         <a class="devicon-nodejs-plain colored">NodeJS</a>
                         <a class="devicon-mongodb-plain colored">MongoDB</a>
+                        <a class="devicon-python-plain colored devicon-tools">Python</a>
+                        <a class="devicon-pandas-original colored">Pandas</a>
                         <a class="devicon-html5-plain colored">HTML</a>
                         <a class="devicon-css3-plain colored">CSS</a>
                         <a class="devicon-javascript-plain colored">Javascript</a>
@@ -1074,11 +1077,12 @@
                       <p class="psubgrouptitle">Programmed with:</p>
                       <div class="list-tools">
                         <a class="devicon-nodejs-plain colored">NodeJS</a>
+                        <a class="devicon-mongodb-plain colored">MongoDB</a>
+                        <a class="devicon-python-plain colored devicon-tools">Python</a>
+                        <a class="devicon-pandas-plain colored">Pandas</a>
                         <a class="devicon-html5-plain colored">HTML</a>
                         <a class="devicon-css3-plain colored">CSS</a>
-                        <a class="devicon-mongodb-plain colored">MongoDB</a>
                         <a class="devicon-bootstrap-plain-wordmark colored">Bootstrap</a>
-                        <a class="devicon-python-plain colored">Python</a>
                         <a class="devicon-express-original colored">Express</a>
                       </div>
                     </div>
@@ -1180,6 +1184,8 @@
                           <img src="assets/img/logos/jupyter.ico" alt="" class="logo_programing" />
                           Jupyter Notebook
                         </a>
+                        <a class="devicon-pandas-plain colored">Pandas</a>
+                        <a class="devicon-numpy-plain colored">NumPy</a>
                       </div>
                     </div>
                   </div>
@@ -1421,11 +1427,9 @@
                     <p class="item-intro text-muted">November 2019 - January 2020</p>
                     <div class="modal-container">
                       <p class="psubgrouptitle">Description:</p>
-                      <p class="pdescription">Development of a Deep Learning Neural Network using Keras & Python. The network tries to classify people by photos of their ears using a fine-tuned architecture. It consists of 3 parts:
-  
-                        Train model: Where the model(s) are trained and obtained its metrics
-                        Loading the models already trained: Where the models already trained are compared between them.
-                        Try with your photos: Where it's possible to check for an unseen photo of one of the classes of the database.
+                      <p class="pdescription">Development of a Deep Learning Neural Network using Keras & Python. The network tries to classify people by photos of their ears using a fine-tuned architecture. It consists of 3 phases:
+
+                        First training the model(s) and obtained its metrics, then loading the models already trained and compare them. Finally, trying it with our photos. In it is also possible to check for an unseen photo of one of the classes of the database.
   
                         Developed with the EAR VN1.0 database with a variety of different classes up to 164.  It achieves an accuracy of 70% for the maximum of 164 classes.
                       </p>
@@ -1441,6 +1445,7 @@
                           <img src="assets/img/logos/colab.ico" alt="" class="logo_programing" />
                           Google Collab
                         </a>
+                        <a class="devicon-numpy-plain colored">NumPy</a>
                       </div>
                     </div>
                   </div>
