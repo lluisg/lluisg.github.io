@@ -38,6 +38,7 @@
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#otherinfo">Other Info</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -631,55 +632,85 @@
         <section class="resume-section" id="otherinfo">
           <div class="resume-section-content">
             <!-- <h2 class="mb-5">Other Info</h2>-->
-            <div class="container">
-              <div class="row">
-                <div class="otherinfo-section col-lg-4 col-sm-6">
-                  <div class="text-left">
-                    <h2 class="section-heading text-uppercase">Other Info</h2>
-                    <ul class="fa-ul mb-0">
-                      <li class="my-2">
-                        <span><i class="fas fa-check"></i></span>
-                        Knowledge of LaTeX  language
-                      </li>
-                      <li class="my-2">
-                        <span><i class="fas fa-check"></i></span>
-                        Knowledge of Photoshop
-                      </li>
-                      <li class="my-2">
-                        <span><i class="fas fa-check"></i></span>
-                        Possesion of a Driving License
-                      </li>
-                    </ul>
-                  </div>
+            <div class="all-info-container">
+              <div class="languages-container">
+                <h2 class="section-heading text-uppercase">Languages</h2>
+                <div class="elements-container">
+                  <p>
+                    <span class="list-inline-item"><img src="assets/img/languages/english.png" class="logo_languages" style="width:1.5rem;height:1.5rem;"></img></span>
+                    English -- C1 European Level  
+                  </p>
+                  <p>
+                    <span class="list-inline-item"><img src="assets/img/languages/danish.png" class="logo_languages" style="width:1.5rem;height:1.5rem;"></img></span>
+                    Danish -- Starting Out...  
+                  </p>
+                  <p>
+                    <span class="list-inline-item"><img src="assets/img/languages/spanish.png" class="logo_languages" style="width:1.5rem;height:1.5rem;"></img></span>
+                    Spanish -- Native  
+                  </p>
+                  <p>
+                    <span class="list-inline-item"><img src="assets/img/languages/catalan.png" class="logo_languages" style="width:1.5rem;height:1.5rem;"></img></span>
+                    Catalan -- Native  
+                  </p>
                 </div>
-                <div class="languages-section col-lg-4 col-sm-6">
-                  <div class="text-left">
-                    <h2 class="section-heading text-uppercase">Languages</h2>
-                    <ul class="fa-ul mb-0">
-                      <li class="my-2">
-                        <span class="list-inline-item"><img src="assets/img/languages/english.png" class="logo_languages" style="width:1.5rem;height:1.5rem;"></img></span>
-                        English -- C1 European Level
-                      </li>
-                      <li class="my-2">
-                        <span class="list-inline-item"><img src="assets/img/languages/danish.png" class="logo_languages" style="width:1.5rem;height:1.5rem;"></img></span>
-                        Danish -- Starting Out...
-                      </li>
-                      <li class="my-2">
-                        <span class="list-inline-item"><img src="assets/img/languages/spanish.png" class="logo_languages" style="width:1.5rem;height:1.5rem;"></img></span>
-                        Spanish -- Native
-                      </li>
-                      <li class="my-2">
-                        <span class="list-inline-item"><img src="assets/img/languages/catalan.png" class="logo_languages" style="width:1.5rem;height:1.5rem;"></img></span>
-                        Catalan -- Native
-                      </li>
-                    </ul>
-                  </div>
+              </div>
+              <div class="other-info-container">
+                <h2 class="section-heading text-uppercase">Other Info</h2>
+                <div class="elements-container">
+                  <p>
+                    <span><i class="fas fa-check"></i></span>
+                    Knowledge of LaTeX  language
+                  </p>
+                  <p>
+                    <span><i class="fas fa-check"></i></span>
+                    Knowledge of Photoshop
+                  </p>
+                  <p>
+                    <span><i class="fas fa-check"></i></span>
+                    Possesion of a Driving License
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <hr class="m-0" />
+
+        <!----- Contact ----->
+        <section class="resume-section" id="contact">
+          <div class="resume-section-content">
+            <div class="text-center">
+              <h2 class="section-heading text-uppercase mb-5">Contact</h2>
+            </div>
+            <div class="container mb-5">
+              <p class="text-center">Please use the following form if you want to get in touch with me directly.</p>
+              <form id="contact-form" target="_blank" action="https://formsubmit.co/f1aa8b04c973b5f015f60fb3e5245d09" method="POST" class="p-4" enctype="multipart/form-data">
+                  <div class="container-form-top">
+                    <div class="container-name">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="container-email">
+                      <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                  </div>
+                  <div class="container-message">
+                    <textarea placeholder="Your Message" class="form-control" name="message" rows="7" required></textarea>
+                  </div>
+                  <div class="container-file">
+                    <input type="file" name="attachment" accept="image/png, image/jpeg">
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-dark btn-block mt-3">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </section>
       </div>
+
+
+
+
+
+
 
 
       <!-- Portfolio Modals-------------------------------------------------->
@@ -1553,9 +1584,9 @@
 
 
       <!----- Footing ----->
-      <a href="https://www.hitwebcounter.com" target="_blank">
-        <img src="https://hitwebcounter.com/counter/counter.php?page=8155928&style=0008&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" />
-      </a>
+      <!-- <a href="https://www.hitwebcounter.com" target="_blank" class="mt-5">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=8155928&style=0008&nbdigits=5&type=ip&initCount=0" title="Free Counter" border="0" />
+      </a> -->
 
       <!-- Bootstrap core JS-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
