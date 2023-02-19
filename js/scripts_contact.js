@@ -1,9 +1,9 @@
+const submit_btn = document.getElementById('btn-contact-submit');
 
-function ContactSended(){
-  const btn = document.getElementById('btn-contact-submit');
-  
-  btn.innerHTML = 'Message sent.\nTo send another refresh the page.'
-  btn.classList.remove("btn-dark");
-  btn.classList.add("btn-success");
-  btn.setAttribute('disabled', true);
-}
+submit_btn.addEventListener('submit', (e)=>{
+  e.preventDefault();
+  submit_btn.innerHTML = 'Message sent.<br>To send another refresh the page.'
+  submit_btn.classList.remove("btn-dark");
+  submit_btn.classList.add("btn-success");
+  submit_btn.setAttribute('disabled', true);  
+})
