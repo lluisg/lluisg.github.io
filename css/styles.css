@@ -11,7 +11,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root{
-  --primary: #4668c9; /* #bd5d38 */
+  --primary: #bd5d38;
+  /* --primary: #4668c9; */
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
