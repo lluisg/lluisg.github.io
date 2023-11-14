@@ -414,6 +414,17 @@
             </div>
 
             <div class="row row-projects">
+              <div class="col-lg-4 col-sm-6 type_other">
+                <div class="portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioImageComp">
+                    <img class="img-fluid proj_thumb rounded" src="assets/img/portfolio/imagecomp-t.png" alt="Project Thumbnail" />
+                  </a>
+                  <div class="portfolio-caption" style="text-align: center;">
+                    <div class="portfolio-caption-heading">Image Comparator Code</div>
+                    <div class="portfolio-caption-subheading text-muted">Executable<br><br></div>
+                  </div>
+                </div>
+              </div>
               <div class="col-lg-4 col-sm-6 type_web">
                 <div class="portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioGameTycoon">
@@ -752,6 +763,49 @@
 
 
       <!-- Portfolio Modals-------------------------------------------------->
+      <!----- IMAGE COMPARER ----->
+      <div class="portfolio-modal modal fade" id="portfolioImageComp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  <div class="modal-body">
+                    <h2 class="title-modal text-uppercase">Image Comparator Program</h2>
+                    <p class="item-intro text-muted">November 2023</p>
+                    <div class="container modal-container">
+                      <div class="container modal-contiguous-container">
+                        <div class="small-text">
+                          <p class="psubgrouptitle">Description:</p>
+                          <p class="pdescription">Scripts programmed in Python to detect and separate all the similar images in a defined folder. For this I used multiple comparison methods:
+                            - Local Sensitive Hashing (based on the approach by <a href="https://github.com/mendesk/image-ndd-lsh/tree/master">Mendesk</a>).
+                            - Histogram comparison
+                            - MSE
+                        </div>
+                        <div class="modal-image-container">
+                          <img class="img-fluid d-block mx-auto img_modal" src="assets/img/portfolio/imagecomp.png" Project Image />
+                        </div>
+                      </div>
+                      <p class="psubgrouptitle">Programmed with:</p>
+                      <div class="list-tools">
+                        <a class="devicon-python-plain colored devicon-tools">Python</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <a href="https://github.com/lluisg/fotocompare_py" target="_blank" class="btn btn-modal-github border-dark"><i class="fab fa-github"></i> Github Code</a>
+                <button class="btn btn-primary btn-close border-dark" data-dismiss="modal" type="button">
+                  <i class="fas fa-times mr-1"></i>
+                  Close Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!----- GAME DEV TYCOON ----->
       <div class="portfolio-modal modal fade" id="portfolioGameTycoon" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -761,8 +815,8 @@
               <div class="row justify-content-center">
                 <div class="col-lg-10">
                   <div class="modal-body">
-                    <h2 class="title-modal text-uppercase">Catalan Courses Website</h2>
-                    <p class="item-intro text-muted">March 2023</p>
+                    <h2 class="title-modal text-uppercase">GameDev Tycoon Guide</h2>
+                    <p class="item-intro text-muted">June 2023</p>
                     <div class="container modal-container">
                       <div class="container modal-contiguous-container">
                         <div class="small-text">
