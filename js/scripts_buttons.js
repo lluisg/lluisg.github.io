@@ -1,3 +1,7 @@
+window.onload = function() {
+  activateProjectFilter('relevant');
+};
+
 function activateProjectFilter(case_activate) {
   activateFilter(case_activate);
   selectButton(case_activate);
@@ -8,7 +12,7 @@ function activateFilter(case_filter) {
   // HIDE ALL THE PROJECTS EXCEPT THE ONES OF THE SAME TYPE AS THE FILTER
   // IF ALL IS CLICKED, ALL WILL BE SHOWN
   type_filter = "type_".concat(case_filter.toLowerCase());
-  var allcases = ["type_web", "type_ml", "type_data", "type_db", "type_other"];
+  var allcases = ["type_relevant", "type_web", "type_ml", "type_data", "type_other"];
 
   if (case_filter != "all"){
     for (var i = 0, ii = allcases.length; i < ii; i++) {
@@ -38,36 +42,42 @@ function selectButton(case_button) {
   // AND ALL THE OTHER BUTTONS TO ONLI THE OUTLINE
   button_filter = "flt_btn_".concat(case_button.toLowerCase());
 
-  document.getElementById("flt_btn_all").classList.remove("btn-primary");
-  document.getElementById("flt_btn_all").classList.add("btn-outline-primary");
-  document.getElementById("flt_btn_web").classList.remove("btn-success");
-  document.getElementById("flt_btn_web").classList.add("btn-outline-success");
-  document.getElementById("flt_btn_ml").classList.remove("btn-danger");
-  document.getElementById("flt_btn_ml").classList.add("btn-outline-danger");
-  document.getElementById("flt_btn_db").classList.remove("btn-secondary");
-  document.getElementById("flt_btn_db").classList.add("btn-outline-secondary");
-  document.getElementById("flt_btn_data").classList.remove("btn-warning");
-  document.getElementById("flt_btn_data").classList.add("btn-outline-warning");
-  document.getElementById("flt_btn_other").classList.remove("btn-info");
-  document.getElementById("flt_btn_other").classList.add("btn-outline-info");
+  // relevant
+  document.getElementById("flt_btn_relevant").classList.remove("btn-primary");
+  document.getElementById("flt_btn_relevant").classList.add("btn-outline-primary");
+  // ML
+  document.getElementById("flt_btn_ml").classList.remove("btn-success");
+  document.getElementById("flt_btn_ml").classList.add("btn-outline-success");
+  // web
+  document.getElementById("flt_btn_web").classList.remove("btn-warning");
+  document.getElementById("flt_btn_web").classList.add("btn-outline-warning");
+  // data
+  document.getElementById("flt_btn_data").classList.remove("btn-info");
+  document.getElementById("flt_btn_data").classList.add("btn-outline-info");
+  // programming
+  document.getElementById("flt_btn_other").classList.remove("btn-secondary");
+  document.getElementById("flt_btn_other").classList.add("btn-outline-secondary");
+  // all
+  document.getElementById("flt_btn_all").classList.remove("btn-danger");
+  document.getElementById("flt_btn_all").classList.add("btn-outline-danger");
 
-  if (button_filter=="flt_btn_all"){
-    document.getElementById("flt_btn_all").classList.remove("btn-outline-primary");
-    document.getElementById("flt_btn_all").classList.add("btn-primary");
-  }else if (button_filter=="flt_btn_web") {
-    document.getElementById("flt_btn_web").classList.remove("btn-outline-success");
-    document.getElementById("flt_btn_web").classList.add("btn-success");
+  if (button_filter=="flt_btn_relevant"){
+    document.getElementById("flt_btn_relevant").classList.remove("btn-outline-primary");
+    document.getElementById("flt_btn_relevant").classList.add("btn-primary");
   }else if (button_filter=="flt_btn_ml") {
-    document.getElementById("flt_btn_ml").classList.remove("btn-outline-danger");
-    document.getElementById("flt_btn_ml").classList.add("btn-danger");
-  }else if (button_filter=="flt_btn_db") {
-    document.getElementById("flt_btn_db").classList.remove("btn-outline-secondary");
-    document.getElementById("flt_btn_db").classList.add("btn-secondary");
+    document.getElementById("flt_btn_ml").classList.remove("btn-outline-success");
+    document.getElementById("flt_btn_ml").classList.add("btn-success");
+  }else if (button_filter=="flt_btn_web") {
+    document.getElementById("flt_btn_web").classList.remove("btn-outline-warning");
+    document.getElementById("flt_btn_web").classList.add("btn-warning");
   }else if (button_filter=="flt_btn_data") {
-    document.getElementById("flt_btn_data").classList.remove("btn-outline-warning");
-    document.getElementById("flt_btn_data").classList.add("btn-warning");
+    document.getElementById("flt_btn_data").classList.remove("btn-outline-info");
+    document.getElementById("flt_btn_data").classList.add("btn-info");
   }else if (button_filter=="flt_btn_other") {
-    document.getElementById("flt_btn_other").classList.remove("btn-outline-info");
-    document.getElementById("flt_btn_other").classList.add("btn-info");
+    document.getElementById("flt_btn_other").classList.remove("btn-outline-secondary");
+    document.getElementById("flt_btn_other").classList.add("btn-secondary");
+  }else if (button_filter=="flt_btn_all") {
+    document.getElementById("flt_btn_all").classList.remove("btn-outline-danger");
+    document.getElementById("flt_btn_all").classList.add("btn-danger");
   };
 };

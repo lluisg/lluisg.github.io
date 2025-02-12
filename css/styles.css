@@ -2460,14 +2460,14 @@ fieldset:disabled a.btn{
 }
 .btn-primary:hover{
   color: #fff;
-  background-color: #9f4e2f;
-  border-color: #964a2c;
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 .btn-primary:focus, .btn-primary.focus{
   color: #fff;
-  background-color: #9f4e2f;
-  border-color: #964a2c;
-  box-shadow: 0 0 0 0.2rem rgba(199, 117, 86, 0.5);
+  background-color: var(--primary);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(66, 163, 241, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled{
   color: #fff;
@@ -2476,11 +2476,11 @@ fieldset:disabled a.btn{
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle{
   color: #fff;
-  background-color: #964a2c;
-  border-color: #8c4529;
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus{
-  box-shadow: 0 0 0 0.2rem rgba(199, 117, 86, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(66, 163, 241, 0.5);
 }
 
 .btn-secondary{
@@ -10641,6 +10641,9 @@ header.masthead .masthead-heading{
 .github_logo{
   color: #161414 !important;
 }
+.ansible_logo{
+  color: #161414 !important;
+}
 .css_logo{
   color: #1d70b3 !important;
 }
@@ -10695,6 +10698,16 @@ header.masthead .masthead-heading{
 .redux_logo{
   color: #7a4dc1 !important;
 }
+.openstack_logo{
+  color: #DA1A32 !important;
+}
+.juju_logo{
+  color: #E95420 !important;
+}
+.jenkins_logo{
+  color: #335061 !important;
+}
+
 
 .list-inline-item{
   display: inline-block;
@@ -10873,7 +10886,7 @@ header.masthead .masthead-heading{
   .languages-container{
     margin-bottom: 2rem;
   }
-  
+
 }
 
 /* ----------------------------- CONTACT FORM ------------------------------------------- */
@@ -10912,10 +10925,15 @@ header.masthead .masthead-heading{
 @media screen and (max-width: 576px){ /*add space between other and languages when small*/
   .languages-section{
     margin-top: 4rem;
-  }  
+  }
 }
 
 .row-projects{ /*center the elemets when only 1*/
   text-align: center;
 }
 
+.work_logo{ /*image logo for the working place*/
+  width: 50px;
+  height: 20px;
+  object-fit: contain;
+}
