@@ -327,6 +327,14 @@
                 "LINK": "https://www.mathworks.com/products/matlab.html",
                 "IMG": "matlab.ico",
                 "COLOR": "ff9900"
+            },
+            {
+                "TYPE": "Data Processing / DataBases",
+                "ID": "excel",
+                "NAME": "Excel",
+                "LINK": "https://www.microsoft.com/es-es/microsoft-365/excel",
+                "IMG": "excel.ico",
+                "COLOR": "22B14C"
             }
         ],
         "Web Developing": [
@@ -410,17 +418,17 @@
             "TAG": "Web",
             "IMG_THUMBNAIL": "portfolio.png",
             "TIME": "February 2025",
-            "IMG_INSIDE": NaN,
+            "IMG_INSIDE": "auto_portfolio_i.png",
             "TYPES": [
                 "relevant",
                 "other"
             ],
-            "SKILLS": "python,jinja2",
+            "SKILLS": "python,jinja2,excel",
             "LINKS": [
                 "GITHUB|https://github.com/lluisg/automatic_personal_page",
                 "LINK|https://lluisg.github.io/"
             ],
-            "DESCRIPTION": NaN
+            "DESCRIPTION": "Generation of an easy-to-use executable file that generates a fully functional Portfolio webpage based on an excel database, which can be updated manually."
         },
         {
             "TITLE": "Image Comparator Program",
