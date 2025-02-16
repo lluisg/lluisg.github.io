@@ -820,7 +820,71 @@
             "DESCRIPTION": "We created a culinary chatbot for telegram as part of the Advanced Engineering Project. This chatbot, from a set of ingredients (sent to it in form of text or images), recommends what recipes can be done with them.<br/>At the beginning we got an initial version of the chatbot from the previous project. This version had implemented some chatbot functionality and made calls to two different REST API's. Spoonacular, to get recipes from a set of ingredients and Amazon Rekognition, to label the images sent by the users.<br/>The biggest differentiations from the previous version are:<br/>1. Be independent from any external REST API. That meant, we had to implement our own neural network to recognize ingredients and also, in order to be independent from Spoonacular, we had to model a Recipe, get the data, save it as SQL and implement the full API for this database in order to be able to use it.<br/>2. Create a user profile where we can have information about individuals. With this we accomplished to know better our customer and based on his diet, recommend only recipes that fit him. We also added a ranking system by which the recipes could get an overall ranking and the users could save recipes as 'favorite'.<br/>To recommend a recipe by its ingredients, we implemented an algorithm that classified the recipes by its ingredients, measuring how well those ingredients 'fitted' with the searched ones. We also implemented a histogram based algorithm to recommend a recipe knowing which were the last recipes the user had searched and which rank he had rated them with.<br/>The chatbot could be used from december 2018 to february 2019 at @culinary_chatbot on Telegram"
         }
     ],
-    "EXTRA_INFO": {
+    "OTHER": [
+        {
+            "TYPE": "LANGUAGE",
+            "LANGUAGE": "English",
+            "LEVEL": "C1 European Level",
+            "ICON": "english.png",
+            "INFO": NaN
+        },
+        {
+            "TYPE": "LANGUAGE",
+            "LANGUAGE": "Spanish",
+            "LEVEL": "Native",
+            "ICON": "spanish.png",
+            "INFO": NaN
+        },
+        {
+            "TYPE": "LANGUAGE",
+            "LANGUAGE": "Catalan",
+            "LEVEL": "Native",
+            "ICON": "catalan.png",
+            "INFO": NaN
+        },
+        {
+            "TYPE": "LANGUAGE",
+            "LANGUAGE": "Danish",
+            "LEVEL": "Level 2",
+            "ICON": "danish.png",
+            "INFO": NaN
+        },
+        {
+            "TYPE": "INFO",
+            "LANGUAGE": NaN,
+            "LEVEL": NaN,
+            "ICON": NaN,
+            "INFO": "Owner (and user) of a Raspberry Pi"
+        },
+        {
+            "TYPE": "INFO",
+            "LANGUAGE": NaN,
+            "LEVEL": NaN,
+            "ICON": NaN,
+            "INFO": "Knowledge of LaTeX language"
+        },
+        {
+            "TYPE": "INFO",
+            "LANGUAGE": NaN,
+            "LEVEL": NaN,
+            "ICON": NaN,
+            "INFO": "Knowledge of Photoshop"
+        },
+        {
+            "TYPE": "INFO",
+            "LANGUAGE": NaN,
+            "LEVEL": NaN,
+            "ICON": NaN,
+            "INFO": "Possesion of a Driving License"
+        }
+    ],
+    "CONTACT": [
+        {
+            "TEXT": "Please use the following form if you want to get in touch with me directly.",
+            "AFTER": "https://www.lluisguardia.host"
+        }
+    ],
+    "CUSTOM": {
         "relevant": {
             "ID": "relevant",
             "TYPE": "TYPE",
@@ -891,47 +955,5 @@
             "ICON": "fas fa-video",
             "COLOR": "e01d02"
         }
-    },
-    "LANGUAGES": [
-        {
-            "LANGUAGE": "English",
-            "LEVEL": "C1 European Level",
-            "ICON": "english.png"
-        },
-        {
-            "LANGUAGE": "Spanish",
-            "LEVEL": "Native",
-            "ICON": "spanish.png"
-        },
-        {
-            "LANGUAGE": "Catalan",
-            "LEVEL": "Native",
-            "ICON": "catalan.png"
-        },
-        {
-            "LANGUAGE": "Danish",
-            "LEVEL": "Level 2",
-            "ICON": "danish.png"
-        }
-    ],
-    "OTHER_INFO": [
-        {
-            "INFO": "Owner (and user) of a Raspberry Pi"
-        },
-        {
-            "INFO": "Knowledge of LaTeX language"
-        },
-        {
-            "INFO": "Knowledge of Photoshop"
-        },
-        {
-            "INFO": "Possesion of a Driving License"
-        }
-    ],
-    "CONTACT": [
-        {
-            "TEXT": "Please use the following form if you want to get in touch with me directly.",
-            "AFTER": "https://www.lluisguardia.host"
-        }
-    ]
+    }
 }
