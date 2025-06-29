@@ -414,6 +414,21 @@
     },
     "PROJECTS": [
         {
+            "TITLE": "Furniture Sale Showcase Website",
+            "TAG": "Web",
+            "IMG_THUMBNAIL": "sell_furniture.png",
+            "TIME": "June 2025",
+            "IMG_INSIDE": "sell_furniture_i.png",
+            "TYPES": [
+                "web"
+            ],
+            "SKILLS": "html,css,react,bootstrap,javascript",
+            "LINKS": [
+                "LINK|https://home-items-lluis.onrender.com/"
+            ],
+            "DESCRIPTION": "I created a small, responsive website to showcase furniture and items we planned to sell before moving out of an apartment. <br/> The site includes an image carousel for each item, item details like title and price, and a navigation system to browse through the collection. <br/> For privacy reasons, the images are not public, and the GitHub repository will remain private."
+        },
+        {
             "TITLE": "Automatic Portfolio",
             "TAG": "Web",
             "IMG_THUMBNAIL": "portfolio.png",

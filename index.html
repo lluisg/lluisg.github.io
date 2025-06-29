@@ -66,7 +66,7 @@
           </div>
         </section>
           <hr class="m-0" />
-                  <!----- Experience ----->
+          <!- ---- Experience ----->
         <section class="resume-section" id="EXPERIENCE">
           <div class="resume-section-content">
             <div class="text-center">
@@ -99,7 +99,7 @@
           </div>
         </section>
           <hr class="m-0" />
-                  <!----- Education ----->
+          <!----- Education ----->
         <section class="resume-section" id="EDUCATION">
           <div class="resume-section-content">
             <div class="text-center">
@@ -138,7 +138,7 @@
           </div>
         </section>
           <hr class="m-0" />
-                  <!----- Courses ----->
+          <!----- Courses ----->
         <section class="resume-section" id="COURSES">
           <div class="resume-section-content">
             <div class="text-center">
@@ -220,7 +220,7 @@
           </div>
         </section>
           <hr class="m-0" />
-                  <!----- Skills----->
+          <!----- Skills----->
         <section class="resume-section" id="SKILLS">
           <div class="resume-section-content">
             <div class="text-center">
@@ -412,7 +412,7 @@
           </div>
         </section>
           <hr class="m-0" />
-                  <!----- Projects ----->
+          <!----- Projects ----->
         <section class="resume-section" id="PROJECTS">
           <div class="container">
             <div class="text-center">
@@ -420,13 +420,24 @@
             </div>
             <div class="btns-type-projs mb-5">
                 <button class="btn btn-outline-primary btn-lg text-center mx-1" id="flt_btn_relevant" onclick="activateProjectFilter('relevant');">Relevant</button>
-                <button class="btn btn-outline-secondary btn-lg text-center mx-1" id="flt_btn_other" onclick="activateProjectFilter('other');">Programming</button>
                 <button class="btn btn-outline-warning btn-lg text-center mx-1" id="flt_btn_web" onclick="activateProjectFilter('web');">Web Development</button>
+                <button class="btn btn-outline-secondary btn-lg text-center mx-1" id="flt_btn_other" onclick="activateProjectFilter('other');">Programming</button>
                 <button class="btn btn-outline-success btn-lg text-center mx-1" id="flt_btn_ml" onclick="activateProjectFilter('ml');">M.L.</button>
                 <button class="btn btn-outline-info btn-lg text-center mx-1" id="flt_btn_data" onclick="activateProjectFilter('data');">Data Processing</button>
               <button class="btn btn-outline-danger btn-lg text-center mx-1" id="flt_btn_all" onclick="activateProjectFilter('all');">All</button>
             </div>
             <div class="row row-projects">
+                <div class="col-lg-4 col-sm-6 type_web">
+                  <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioFurnitureSaleShowcaseWebsite">
+                      <img class="img-fluid img-thumbnail" src="imgs/projects/sell_furniture.png" alt="Project Thumbnail" />
+                    </a>
+                    <div class="portfolio-caption" style="text-align: center;">
+                      <div class="portfolio-caption-heading">Furniture Sale Showcase Website</div>
+                      <div class="portfolio-caption-subheading text-muted">Web<br><br></div>
+                    </div>
+                  </div>
+                </div>
                 <div class="col-lg-4 col-sm-6 type_relevant type_other">
                   <div class="portfolio-item">
                     <a class="portfolio-link" data-toggle="modal" href="#portfolioAutomaticPortfolio">
@@ -706,7 +717,7 @@
           </div>
         </section>
           <hr class="m-0" />
-                  <!----- Other Info ----->
+          <!----- Other Info ----->
         <section class="resume-section" id="OTHER">
           <div class="resume-section-content">
             <!-- <h2 class="mb-5">Other Info</h2>-->
@@ -757,7 +768,7 @@
           </div>
         </section>
           <hr class="m-0" />
-                  <!----- Contact ----->
+          <!----- Contact ----->
         <section class="resume-section" id="CONTACT">
           <div class="resume-section-content">
             <div class="text-center">
@@ -789,7 +800,53 @@
           </div>
         </section>
           <hr class="m-0" />
-      <!-- Portfolio Modals-------------------------------------------------->
+<!-- Portfolio Modals-------------------------------------------------->
+      <!----- FURNITURE SALE SHOWCASE WEBSITE ----->
+      <div class="portfolio-modal modal fade" id="portfolioFurnitureSaleShowcaseWebsite" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="imgs/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  <div class="modal-body">
+                    <h2 class="title-modal text-uppercase">Furniture Sale Showcase Website</h2>
+                    <p class="item-intro text-muted">June 2025</p>
+                    <div class="container modal-container">
+                      <div class="container modal-contiguous-container">
+                        <div class="small-text">
+                          <p class="psubgrouptitle">Description:</p>
+                          <p class="pdescription">I created a small, responsive website to showcase furniture and items we planned to sell before moving out of an apartment. <br/> The site includes an image carousel for each item, item details like title and price, and a navigation system to browse through the collection. <br/> For privacy reasons, the images are not public, and the GitHub repository will remain private.</p>
+                        </div>
+                        <div class="modal-image-container">
+                          <img class="img-fluid d-block img_modal" src="imgs/projects/sell_furniture_i.png" Project Image />
+                        </div>
+                      </div>
+                      <p class="psubgrouptitle">Programmed with:</p>
+                      <div class="list-tools">
+                        <a class="text-tools" style="color: #f16f37;"><img src="imgs/skills/html.ico" alt="" class="logo_programing" /> HTML</a>
+                        <a class="text-tools" style="color: #1d70b3;"><img src="imgs/skills/css.ico" alt="" class="logo_programing" /> CSS</a>
+                        <a class="text-tools" style="color: #f0db4f;"><img src="imgs/skills/javascript.ico" alt="" class="logo_programing" /> Javascript</a>
+                        <a class="text-tools" style="color: #01d8ff;"><img src="imgs/skills/react.ico" alt="" class="logo_programing" /> React</a>
+                        <a class="text-tools" style="color: #7011f4;"><img src="imgs/skills/bootstrap.ico" alt="" class="logo_programing" /> Bootstrap</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <a href="https://home-items-lluis.onrender.com/" target="_blank" class="btn border-dark btn-modal-LINK">
+                  <i class="fas fa-link"></i> Online Link
+                </a>
+                <button class="btn btn-primary btn-close border-dark" data-dismiss="modal" type="button">
+                  <i class="fas fa-times mr-1"></i>
+                  Close Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!----- AUTOMATIC PORTFOLIO ----->
       <div class="portfolio-modal modal fade" id="portfolioAutomaticPortfolio" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
